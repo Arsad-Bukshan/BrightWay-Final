@@ -1,0 +1,426 @@
+.navbar-menu .contact a {
+    color: #e68a00;
+}
+.image-container{
+width: 100%;
+height: 700px;
+}
+
+.image-container img{
+width: 100%;
+height: 700px;
+
+}
+.contact-container {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #e5e5e5;
+}
+
+.contact-container .contact-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    padding: 15px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container .contact-box .icon img {
+    width: 30px;
+    margin-right: 15px;
+}
+
+.contact-container .contact-box  .contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container .contact-box  .contact-info .label {
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-container .contact-box  .contact-info .info {
+    color: #555;
+}
+
+.query-container{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    padding: 20px ;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.query-container .container-query {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #f5f5f5; */
+}
+
+.query-container .container-query .content {
+    text-align: center;
+    max-width: 800px;
+}
+
+.query-container .container-query .content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+}
+
+.query-container .container-query .content .description {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+}
+.query-container .form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    text-align: center;
+}
+
+.query-container .form-container h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.query-container .form-container p {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.query-container .form-container .contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.query-container .form-container .contact-form .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.query-container .form-container .contact-form .form-row .input-field {
+    width: 48%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.query-container .form-container .contact-form .form-row .textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+.query-container .form-container .contact-form .form-row  .submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #f8a138;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.query-container .form-container .contact-form .form-row  .submit-btn:hover {
+    background-color: #e0902f;
+}
+
+.container-data {
+    width: 100%;
+    /* height: .75vh;    */
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 40px;
+    padding: 20px 20px;
+}
+
+/* Map and Marker Styling */
+.container-data .map-container {
+    position: relative;
+    width: 50%;
+    height: auto;
+}
+
+.container-data .map-container .map {
+    width: 100%;
+    height: auto;
+}
+
+.marker {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #FFCC00;
+    border-radius: 50%;
+    border: 3px solid #333;
+}
+
+/* Text Container */
+.container-data .text-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.container-data .text-container h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+
+
+.image-container {
+    width: 100%;
+    height: 700px;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.contact-container .contact-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container .contact-box .icon img {
+    width: 30px;
+    margin-right: 15px;
+}
+
+.contact-container .contact-box .contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Query Container */
+.query-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.query-container .container-query {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.query-container .container-query .content {
+    text-align: center;
+    max-width: 800px;
+}
+
+.query-container .form-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    text-align: center;
+}
+
+.query-container .form-container h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.query-container .form-container .contact-form .form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.query-container .form-container .contact-form .form-row .input-field {
+    width: 48%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Container Data */
+.container-data {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px 20px;
+}
+
+.container-data .map-container {
+    position: relative;
+    width: 50%;
+    height: auto;
+}
+
+.marker {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #FFCC00;
+    border-radius: 50%;
+    border: 3px solid #333;
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+    /* .image-container{
+        height: 30vh;
+    }
+      */
+        .image-container {
+            height: auto;
+            width: 100%;
+            padding: 0 15px; /* Add padding on smaller screens */
+        }
+    
+    .contact-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        gap: 15px;
+    }
+
+    .contact-box {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 10px 20px;
+    }
+
+    .contact-box .icon img {
+        width: 25px;
+        margin-right: 10px;
+    }
+
+    .query-container {
+        /* height: 50vh; */
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .query-container .container-query {
+            width: 100%;
+            height: auto;
+            padding: 50px 0px;
+    }
+
+    .query-container .form-container {
+        width: 90%;
+    }
+
+    .container-data {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container-data .map-container,
+    .container-data .text-container {
+        width: 100%;
+    }
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 480px) {
+    .image-container{
+        height: 30vh;
+    }
+    .image-container img {
+        width: 100%;
+        height: auto; /* Ensures the image remains responsive */
+    }
+    .contact-box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .contact-box .icon img {
+        width: 20px;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .contact-box .contact-info {
+        align-items: center;
+    }
+
+    .contact-box .contact-info .label {
+        font-size: 14px;
+    }
+
+    .contact-box .contact-info .info {
+        font-size: 12px;
+    }
+    .query-container .container-query{
+        height: 50vh;
+    }
+    .query-container .container-query .content h1 {
+        font-size: 32px;
+    }
+
+    .query-container .form-container h1 {
+        font-size: 24px;
+    }
+
+    .query-container .form-container .contact-form .form-row .input-field {
+        width: 100%;
+    }
+
+    .query-container .form-container {
+        padding: 20px;
+    }
+
+    .container-data .text-container h1 {
+        font-size: 28px;
+    }
+}
