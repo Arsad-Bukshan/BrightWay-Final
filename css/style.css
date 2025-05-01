@@ -33,7 +33,7 @@ body {
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 18px;
-    padding: 8px;
+    /* padding: 8px; */
     position: relative;
     font-weight: 400;
 }
@@ -195,8 +195,6 @@ footer {
 
 
 
-/* resp nav start */
-
 .navbar label{
     display: none;
 }
@@ -208,7 +206,6 @@ footer {
 
 
 
-/* resp nav end */
 
 
 
@@ -224,11 +221,51 @@ footer {
 
 /* Media Queries */
 
-/* Mobile */
+@media (max-width: 321px) {
+    
+        .navbar ul {
+            z-index: 100000;
+            width: 100%;
+            height: auto;
+            background-color: #f4f4f4;
+            top: 100%;
+            position: absolute;
+            flex-direction: column;
+            gap: 20px;
+            left: -200%;
+            transition-duration: 0.2s;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 2%;
+            padding-right: 70%;
+        }
+
+        .navbar ul li a{
+            font-size: 5px;
+        }
+}
+
+@media (max-width: 376px) {
+    
+        .navbar ul li a{
+            font-size: 17px;
+        }
+}
+
+
+
 @media (max-width: 600px) {
-    /* .navbar-menu {
-        display: none;
-    } */
+
+    .footer-links {
+        list-style: none;
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        row-gap: 10px;
+        gap: 10px;
+        padding: 10px;
+        flex-direction: column;
+    }
 
     .navbar-logo img {
         height: 40px;
@@ -279,8 +316,6 @@ footer {
 
 
 
-/* resp nav start  */
-
 @media (max-width:770px){
     .navbar ul{
         z-index: 100000;
@@ -299,34 +334,23 @@ footer {
         padding-right: 70%;
         
     } 
+
     
-    
-    
+ 
+      
     .navbar label{
         display: block;
     }
     
-    .navbar #burger:checked ~ ul{
-        left: 2%;
+    .navbar #burger:checked ~ ul {
+        width: 100%;
+        left: 0%;
     }
 }
 
 
 
 
-
-/* resp nav end */
-
-
-
-
-
-
-
-
-
-
-/* Tablet */
 @media (min-width: 601px) and (max-width: 1024px) {
     .navbar-menu {
         gap: 15px;
@@ -354,7 +378,8 @@ footer {
     }
 }
 
-/* Large screens */
+
+
 @media (min-width: 1025px) {
     .navbar-logo img {
         height: 60px;

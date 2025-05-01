@@ -1,14 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  
+.navbar-menu .support a {
+  color: #2A5298;
+}
+ 
+
   .banner {
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,12 +13,11 @@
     background-color: #cceedd;
   }
   
-  .banner-content {
-    max-width: 50%;
-  }
+
   
   .banner-content h1 {
-    font-size: 48px;
+    width: 100%;
+    font-size: 42px;
     font-weight: 700;
     color: #1a1a1a;
     margin-bottom: 20px;
@@ -29,7 +25,8 @@
   }
   
   .banner-content p {
-    font-size: 14px;
+    width: 80%;
+    font-size: 16px;
     color: #333;
     line-height: 1.6;
     margin-bottom: 30px;
@@ -239,6 +236,12 @@
     font-weight: 500;
     cursor: pointer;
   }
+
+  .team-btn a{
+    text-decoration-line: none;
+    list-style: none;
+    color: #000;
+  }
   
 
 
@@ -260,12 +263,18 @@
 
   @media (max-width: 1024px) {
     .banner {
+      width: 100%;
       flex-direction: column-reverse;
       text-align: center;
     }
     .banner-content {
+      width: 100%;
+      display: flex;
       margin-top: 20px;
-    }
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+  }
     .banner-img {
       text-align: center;
     }
@@ -306,6 +315,18 @@
     .stat-box h2 {
       font-size: 22px;
     }
+
+    .primary-btn {
+      /* padding: 12px 24px; */
+      width: 100%;
+      background-color: #2A5298;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+  }
+
     .appointment h3 {
       font-size: 20px;
     }
@@ -314,15 +335,72 @@
     }
   }
 
+  @media (max-width: 400px) {
+
+    .banner-content p {
+      font-size: 16px;
+  }
+
+  .banner-content h1 {
+    font-size: 20px;
+}
+
+
+.buttons {
+  /* width: 100%; */
+  display: flow;
+  /* margin-left: -20px; */
+}
+
+.primary-btn {
+  width: 100%;
+  /* padding: 8px 12px; */
+  font-size: 10px;
+  margin-bottom: 20px;
+}
+
+.secondary-btn {
+  width: 100%;
+  /* padding: 8px 12px; */
+  font-size: 10px;
+}
+
+.banner-image img{
+  width: 80%;
+}
+
+.navbar ul {
+  left: -200%;
+  transition-duration: 0.7s;
+}
+
+  }
+
+
   @media (max-width: 375px) {
     .banner-content h1 {
       font-size: 22px;
     }
+    .banner-content p {
+      width: 100%;
+      font-size: 16px;
+  }
     .banner-buttons button {
       width: 100%;
       margin: 10px 0;
     }
+      .banner {
+          align-items: center;
+          width: 100%;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          flex-direction: column-reverse;
+          text-align: center;
+      }
   }
+
+
 
   @media (max-width: 325px) {
     .banner-content h1 {

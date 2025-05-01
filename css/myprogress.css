@@ -1,4 +1,4 @@
-.navbar-menu .about a {
+.navbar-menu .myprogress a {
     color: #2A5298;
 }
 
@@ -226,18 +226,36 @@
     }
 }
 
+@media screen and (max-width: 700px) {
+    .image-container .text-overlay h1 {
+        font-size: 28px;
+    }
+
+    .image-container .text-overlay p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .image-container .text-overlay h1 {
+        font-size: 24px;
+    }
+
+    .image-container .text-overlay p {
+        font-size: 12px;
+    }
+}
+
 @media only screen and (max-width: 480px) {
+
+    .image-container .text-overlay p {
+        display: none;
+}
 
     
     .image-container .text-overlay h1 {
         font-size: 1.8rem; 
     }
-
-    .image-container .text-overlay p {
-        font-size: 1rem; 
-    }
-
-
 
     .heading-container {
         padding: 10px; 
@@ -305,6 +323,34 @@
         font-size: 0.8rem; 
     }
 }
+
+
+@media screen and (max-width: 400px) {
+
+        .image-container .text-overlay p {
+            display: none;
+    }
+
+    .text-overlay {
+        margin-top: -10%;
+    }
+
+    .image-container .text-overlay h1 {
+        font-size: 24px;
+    }
+
+    .image-container .text-overlay p {
+        font-size: 10px;
+    }
+
+    .navbar ul {
+        left: -200%;
+        transition-duration: 0.7s;
+      }
+}
+
+
+
 
 
 
