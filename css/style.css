@@ -172,9 +172,11 @@ footer {
     justify-content: space-evenly;
 
 }
-.footer-bottom p{
+
+.footer-bottom p {
     color: #f4f4f4;
 }
+
 .footer-bottom-links {
     display: flex;
     justify-content: center;
@@ -195,11 +197,11 @@ footer {
 
 
 
-.navbar label{
+.navbar label {
     display: none;
 }
 
-.navbar #burger{
+.navbar #burger {
     display: none;
 }
 
@@ -222,34 +224,34 @@ footer {
 /* Media Queries */
 
 @media (max-width: 321px) {
-    
-        .navbar ul {
-            z-index: 100000;
-            width: 100%;
-            height: auto;
-            background-color: #f4f4f4;
-            top: 100%;
-            position: absolute;
-            flex-direction: column;
-            gap: 20px;
-            left: -200%;
-            transition-duration: 0.2s;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            padding-left: 2%;
-            padding-right: 70%;
-        }
 
-        .navbar ul li a{
-            font-size: 5px;
-        }
+    .navbar ul {
+        z-index: 100000;
+        width: 100%;
+        height: auto;
+        background-color: #f4f4f4;
+        top: 100%;
+        position: absolute;
+        flex-direction: column;
+        gap: 20px;
+        left: -200%;
+        transition-duration: 0.2s;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 2%;
+        padding-right: 70%;
+    }
+
+    .navbar ul li a {
+        font-size: 5px;
+    }
 }
 
 @media (max-width: 376px) {
-    
-        .navbar ul li a{
-            font-size: 17px;
-        }
+
+    .navbar ul li a {
+        font-size: 17px;
+    }
 }
 
 
@@ -316,8 +318,8 @@ footer {
 
 
 
-@media (max-width:770px){
-    .navbar ul{
+@media (max-width:770px) {
+    .navbar ul {
         z-index: 100000;
         width: auto;
         height: auto;
@@ -332,17 +334,17 @@ footer {
         padding-bottom: 30px;
         padding-left: 2%;
         padding-right: 70%;
-        
-    } 
 
-    
- 
-      
-    .navbar label{
+    }
+
+
+
+
+    .navbar label {
         display: block;
     }
-    
-    .navbar #burger:checked ~ ul {
+
+    .navbar #burger:checked~ul {
         width: 100%;
         left: 0%;
     }
@@ -402,5 +404,3 @@ footer {
         font-size: 16px;
     }
 }
-
-
