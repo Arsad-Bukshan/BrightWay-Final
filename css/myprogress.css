@@ -26,14 +26,16 @@
 }
 
 .image-container .text-overlay h1 {
+ 
     font-size: 3em;
-    margin-bottom: 10px;
+    margin-bottom: 100%;
     font-weight: bold;
+    color: #333;
 }
 
-.image-container .text-overlay p {
+/* .image-container .text-overlay p {
     font-size: 1.5em;
-}
+} */
 
 .heading-container {
     max-width: 1200px;
@@ -56,14 +58,16 @@
     padding-bottom: 30px;
 }
 
-.heading-container .content .left, .heading-container .content .right {
+.heading-container .content .left,
+.heading-container .content .right {
     flex: 1;
     font-size: 1rem;
     line-height: 1.6;
     text-align: justify;
 }
 
-.heading-container .content .left p , .heading-container .content .right p {
+.heading-container .content .left p,
+.heading-container .content .right p {
     margin-bottom: 20px;
 }
 
@@ -72,10 +76,10 @@
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding : 20px;
+    padding: 20px;
     /* background-color: #e4e8db; */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .container-auto .image-section {
@@ -97,7 +101,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     padding: 20px;
-    color: #fff;
+    /* color: #fff; */
     font-size: 24px;
     cursor: pointer;
 }
@@ -125,6 +129,7 @@
     color: #333;
     font-weight: bold;
 }
+
 .container-card {
     max-width: 1200px;
     margin: 0 auto;
@@ -196,6 +201,19 @@
 
 
 
+@media screen and (max-width: 1136px) {
+    .image-container .text-overlay h1 {
+        margin-top: 30%;
+    }
+}
+
+@media screen and (max-width: 401px) {
+    .image-container .text-overlay h1 {
+        margin-top: 60%;
+    }
+}
+
+
 @media screen and (max-width: 1024px) {
     .heading-container .content {
         flex-direction: column;
@@ -205,8 +223,8 @@
         flex-direction: column;
         padding: 10px;
     }
-    
-    .container-auto .image-section, 
+
+    .container-auto .image-section,
     .container-auto .text-section {
         padding: 10px;
     }
@@ -250,31 +268,34 @@
 
     .image-container .text-overlay p {
         display: none;
-}
+    }
 
-    
+
     .image-container .text-overlay h1 {
-        font-size: 1.8rem; 
+        font-size: 1.8rem;
     }
 
     .heading-container {
-        padding: 10px; 
+        padding: 10px;
     }
 
     .heading-container .heading h1 {
-        font-size: 1.5rem;
+        margin: 10px;
+        font-size: 20px;
     }
 
     .heading-container .content {
-        flex-direction: column; 
-        gap: 20px; 
+        margin: 10px;
+        flex-direction: column;
+        gap: 20px;
     }
 
-    .heading-container .content .left, .heading-container .content .right {
+    .heading-container .content .left,
+    .heading-container .content .right {
         font-size: 0.9rem;
     }
 
-  
+
     .container-auto {
         flex-direction: column;
         padding: 10px;
@@ -293,13 +314,13 @@
         font-size: 0.9rem;
     }
 
-  
+
     .container-card {
-        padding: 20px; 
+        padding: 20px;
     }
 
     .container-card h1 {
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
     }
 
     .container-card .service-cards {
@@ -307,12 +328,12 @@
     }
 
     .container-card .service-cards .card {
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
         padding: 15px;
     }
 
     .container-card .service-cards .card .icon {
-        font-size: 2rem; 
+        font-size: 2rem;
     }
 
     .container-card .service-cards .card .icon h2 {
@@ -320,15 +341,29 @@
     }
 
     .container-card .service-cards .card .icon p {
-        font-size: 0.8rem; 
+        font-size: 0.8rem;
     }
 }
 
 
+/* @media screen and (max-width: 426px) {
+    .container-auto .image-section img {
+        height: 300px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .container-auto .image-section img {
+        height: 200px;
+        margin-top: 30px;
+    }
+} */
+
 @media screen and (max-width: 400px) {
 
-        .image-container .text-overlay p {
-            display: none;
+    .image-container .text-overlay p {
+        display: none;
     }
 
     .text-overlay {
@@ -346,9 +381,34 @@
     .navbar ul {
         left: -200%;
         transition-duration: 0.7s;
-      }
+    }
 }
 
+@media (max-width: 320px) {
+    .navbar #burger:checked~ul {
+        padding: 15px;
+        /* width: 100%; */
+        /* background-color: red; */
+    }
+
+    .navbar-join .join-now {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    .navbar-logo h1 {
+        font-size: 18px;
+    }
+
+    .navbar-logo h6 {
+        font-size: 10px;
+    }
+
+    .container-auto .image-section img {
+        margin-top: 5px;
+    }
+
+}
 
 
 
